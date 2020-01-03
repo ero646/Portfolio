@@ -270,7 +270,7 @@
     else if (window.attachEvent) {window.attachEvent("onload", async_load);}
     else {window.onload = async_load;}
 
-window.onload = function () {
+window.onbeforeunload = function () {
     window.scrollTo(0,0);
 };
     
