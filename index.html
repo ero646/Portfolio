@@ -270,7 +270,9 @@
     else if (window.attachEvent) {window.attachEvent("onload", async_load);}
     else {window.onload = async_load;}
 
-$(document).load().scrollTop(0);
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
     
 </script>
 
